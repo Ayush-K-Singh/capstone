@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutusComponent } from './Aboutus/create-about-us-component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { cartitemcomponent } from './cart/cart-item/cart-item.component';
 import { Displaydata } from './Display/Products_UI/display.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'product-description',component:ProductDescriptionComponent},
+  {path:'about',component:AboutusComponent},
   {path:'**',component:Displaydata},
   // {path:'',redirectTo:'login',pathMatch:'full'},
  

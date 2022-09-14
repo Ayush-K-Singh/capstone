@@ -1,0 +1,39 @@
+
+.About{
+    position: absolute;
+    top: 325px;
+    left: 30px;
+    width: 80%;
+    height: 40px;
+    font-size: 25px;
+    font-family: monospace;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+.sej-ctitle{
+    font-size: 70px;
+}
+h5{
+    
+    margin-top: 5%;
+    /* margin-right: 10%; */
+    margin-left:20%;
+}
+.green{
+    color: #71c21b;
+}
+h2{
+   
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+}
+    
+h3{
+    text-align:center;
+    font-size:40px;
+}
+

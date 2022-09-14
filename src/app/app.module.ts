@@ -59,6 +59,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './landing/landing.component';
 import { SignupModule } from './signup/signup.module';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
+import { AboutModule } from './Aboutus/AboutusModule/aboutus-module';
 // import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
@@ -81,7 +82,8 @@ import { ProductDescriptionComponent } from './product-description/product-descr
   HttpClientInMemoryWebApiModule.forRoot(ProductApiService),HttpClientModule,
   LoginModule,
   NgbModule,
-  SignupModule
+  SignupModule,
+  AboutModule
 
   ],
   providers: [ServiceService,MessService],
