@@ -1,0 +1,62 @@
+.card-whole{
+    position: relative;
+    width: 225px;
+    height: 350px;
+    background-color: #E5E4E2;
+    border: 3px solid black;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.card-img{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    /* background-color: aquamarine; */
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 200px;
+    /* background-color: darkmagenta; */
+}
+
+.card-btn{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 300px;
+    /* background-color: grey; */
+    border-radius: 0 0 15px 15px;
+}
+
+.product-name{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    /* background-color: white; */
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.product-price{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    right: 0;
+    padding-top: 10px;
+    /* background-color: cornflowerblue; */
+}
+
+.product-description{
+    position: absolute;
+    width: 220px;
+    height: 60px;
+    top: 40px;
+    padding-left: 15px;
+    /* background-color: yellow; */
+}

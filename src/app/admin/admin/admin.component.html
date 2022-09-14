@@ -1,0 +1,114 @@
+<div class="whole">
+    <div class="main">
+        <div class="photo">
+            <div class="display">
+                <img [src]="productForm.value.image"  alt="">
+            </div>
+        </div>
+        <div class="input">
+            
+            <div class="form-container">
+        
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                    
+                    <div class="name">
+                        <mat-form-field appearance="fill" class="col-md-12">
+                            <mat-label>Name</mat-label>
+                            <input matInput type="text" id="name" name="name" formControlName="productName" placeholder="Name">
+                            <mat-error *ngIf="productForm.controls.productName.invalid || productForm.controls.productName.touched">
+                                Name is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="description">
+                        <mat-form-field appearance="fill" class="col-md-12">
+                            <mat-label>Description</mat-label>
+                            <input matInput type="text" id="description" name="description" formControlName="description" placeholder="Description">
+                            <mat-error *ngIf="productForm.controls.description.invalid || productForm.controls.description.touched">
+                                Description is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    
+            
+                    
+                    <div class="price">
+                        <mat-form-field appearance="fill" class="col-md-12">
+                            <mat-label>Price</mat-label>
+                            <input matInput type="number" id="price" name="price" formControlName="price" placeholder="Price">
+                            <mat-error *ngIf="productForm.controls.price.invalid || productForm.controls.price.touched">
+                                <div *ngIf="productForm.controls.price.errors?.['required']">
+                                    Price is required.
+                                </div>
+                                <div *ngIf="productForm.controls.price.errors?.['min']">
+                                    Price has to be greater than 0.
+                                </div>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="category">
+                        <mat-form-field appearance="fill" class="col-md-12">
+                            <mat-label>Category</mat-label>
+                            <mat-select matNativeControl name="category" formControlName="category">
+                                <mat-option value="Electronic">Electronic</mat-option>
+                                <mat-option value="Fashion">Fashion</mat-option>
+                                <mat-option value="Footwear">Footwear</mat-option>
+                                <mat-option value="Furniture">Furniture</mat-option>
+                                <mat-option value="Book">Book</mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="productForm.controls.category.invalid || productForm.controls.category.touched">
+                                Category is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="image">
+                        <mat-form-field appearance="fill" class="col-md-12">
+                            <mat-label>Image</mat-label>
+                            <input matInput type="text" id="image" name="image" formControlName="image" placeholder="Image">
+                            <mat-error *ngIf="productForm.controls.image.invalid || productForm.controls.image.touched">
+                                Image is required.
+                            </mat-error>  
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="payment">
+                        <mat-form-field appearance="fill" class="col-md-12">
+                            <mat-label>Mode of Payment</mat-label>
+                            <mat-select matNativeControl name="modeOfPayment" formControlName="modeOfPayment">
+                                <mat-option value="Debit Card">Debit Card</mat-option>
+                                <mat-option value="Credit Card">Credit Card</mat-option>
+                                <mat-option value="UPI">UPI</mat-option>
+                                <mat-option value="Cash on Delivery">Cash on Delivery</mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="productForm.controls.modeOfPayment.invalid || productForm.controls.modeOfPayment.touched">
+                                Select Mode of Payment.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="delivery">
+                        <div class="col-md-12">
+                            <mat-label>Available for Fast Delivery: </mat-label>
+                            <mat-radio-group aria-label="Available for Fast Delivery" formControlName="fastDelivery">
+                                <mat-radio-button value="Yes">Yes </mat-radio-button>
+                                <mat-radio-button value="No">No</mat-radio-button>
+                            </mat-radio-group>
+                            <mat-error *ngIf="productForm.controls.fastDelivery.invalid && productForm.controls.fastDelivery.touched">
+                                Select one option.
+                            </mat-error>
+                        </div>
+                    </div>
+                    
+                    <div class="submit">
+                        <button type="submit" class="btn btn-primary">Create Product</button>
+                    </div>
+                
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</div>

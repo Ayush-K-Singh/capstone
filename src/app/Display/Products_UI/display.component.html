@@ -1,0 +1,120 @@
+<app-header></app-header>
+<app-landing></app-landing>
+<div class="carousel-box">
+    <ngb-carousel>
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img src="../../../assets/pexels-photomix-company-887751.jpg" alt="Random first slide" width="100%" height="616px">
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img src="../../../assets/man-in-suit-on-stairs.jpg" alt="Random second slide" width="100%" height="616px">
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img src="../../../assets/modern-time-pieces.jpg"  alt="Random third slide" width="100%" height="616px">
+          </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+
+<div class="category-box">
+
+  <div class="all">
+    <a>
+      <img class="all-image" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+      <h4 class="all-text" (click)="categorySelection1('All Products')">All products</h4>
+    </a>
+  </div>
+
+  <div class="electronics">
+    <a >
+      <img class="electronics-image" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+      <h4 class="electronics-text" (click)="categorySelection1('electronics')">Electronics</h4>
+    </a>
+  </div>
+
+  <div class="fashion">
+    <a >
+      <img class="fashion-image" src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+      <a class="fashion-text" (click)="categorySelection1('fashion')">Fashion</a>
+    </a>
+  </div>
+
+  <div class="jwellery">
+    <a >
+      <img class="jwellery-image" src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50" alt="">
+      <h4 class="jewllery-text" (click)="categorySelection1('jewllery')">Jewllery</h4>
+    </a>
+  </div>
+  
+</div>
+
+<div class="row container" style="margin-top: 20px;">
+  <h1 class=" text-center justify-content-*-center"><marquee>{{src}}</marquee></h1>
+</div>
+
+<div class="main">
+  <div class="filter">
+
+    <h1 class="filter-text">Filter by Price</h1>
+
+    <form [formGroup]="filtersform" (ngSubmit)="onSubmit()">
+       
+      <div class="from">
+        <mat-form-field appearance="fill" class="from-input">
+          <mat-label>From</mat-label>
+          <input  matInput type="number" placeholder='Min' formControlName="from" min="0" required>
+        </mat-form-field>
+      </div>
+      
+      <div class="to">
+        <mat-form-field appearance="fill" class="to-input">
+          <mat-label>To</mat-label>
+          <input matInput type="number" placeholder='Max' formControlName="to" min="0" max="1000" required>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <button type="submit" class="filter-btn">Filter</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="products">
+    <!-- code for displaying all products -->
+    <div class="row container product-box" >
+      <ng-container  *ngFor="let item of this.Products">
+        <div class="col-3">
+          <div class="single-item" *ngIf=" this.srcProd===item.name  || this.srcProd==='' ">
+            <app-productitem [proitem]='item'> </app-productitem>
+          </div> 
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+   
+      
+                    
+                  
+        
+
+        <!-- <div class="col-9 justify-content-*-center " style="margin-top: 20px;">
+            <div class="row container " >
+              <ng-container  *ngFor="let item of this.Products">
+                <div class="col-3">
+                  <div *ngIf=" this.srcProd===item.name  || this.srcProd==='' ">
+                    <app-productitem [proitem]='item'> </app-productitem>
+                  </div> 
+                </div>
+              </ng-container>
+            </div>
+        </div> -->
+  
+
+<!-- <app-footer></app-footer> -->

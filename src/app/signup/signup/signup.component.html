@@ -1,0 +1,18 @@
+
+<div class="whole">
+    <div class="right">
+      <h2 class="text">SignUp</h2>
+      <p class="para-text">Create New Account</p>
+      <form #loginForm = "ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <input class="name" type="text" name="userNameEntered" ngModel id="" placeholder="Enter Name">
+
+        <input class="email" type="email" name="userEmailEntered" ngModel id="" placeholder="Enter Email">
+        <!-- <br> -->
+        <input class="password" type="text" name="userPasswordEntered" ngModel id="" placeholder="Enter Password">
+        <!-- <br> -->
+        <div class="hr"></div>
+        <button class="signup" type="submit">SignUp</button>
+      </form>
+      <!-- <button class="signup">New User : SignUp</button> -->
+    </div>
+  </div>

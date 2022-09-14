@@ -1,15 +1,15 @@
-/* .whole{
+.whole{
     width: 100%;
-    height: 100vh; */
+    height: 100vh;
     /* background-color: brown; */
-    /* background-image: url(../assets/LogIn.png);
-} */
+    background-image: url(../../../assets/LogIn.png);
+}
 
-/* .text{
+.text{
     position: absolute;
     font-family: monospace;
     font-size: 40px;
-    left: 125px;
+    left: 120px;
     top: 40px;
 }
 
@@ -24,10 +24,23 @@
     border: 4px solid black;
 }
 
+.name{
+    position: absolute;
+    left: 30px;
+    top: 185px;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    border: 2px solid black;
+}
+
 .email{
     position: absolute;
     left: 30px;
-    top: 175px;
+    top: 235px;
     width: 80%;
     height: 40px;
     border-radius: 10px;
@@ -39,7 +52,7 @@
 
 .password{
     position: absolute;
-    top: 225px;
+    top: 285px;
     left: 30px;
     width: 80%;
     height: 40px;
@@ -79,43 +92,19 @@
     position: absolute;
     width: 80%;
     left: 30px;
-    top: 295px;
+    top: 350px;
     border: 2px solid black;
 }
 
 .para-text{
     position: absolute;
     top: 120px;
-    left: 45px;
+    left: 80px;
     font-size: 20px;
     font-family: monospace;
-} */
-
-
-.nav-box{
-    height: 50px;
 }
 
-.app-name{
+.logout-btn{
     position: absolute;
-    top: 10px;
-    left: 40px;
-}
-
-.home-btn{
-    position: absolute;
-    top: 5px;
-    right: 180px;
-}
-
-.login-signup-btn{
-    position: absolute;
-    top: 5px;
-    right: 80px;
-}
-
-.cart-btn{
-    position: absolute;
-    top: 5px;
-    right: 40px;
+    right: 20px;
 }

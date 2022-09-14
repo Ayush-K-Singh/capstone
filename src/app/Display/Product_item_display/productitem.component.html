@@ -1,0 +1,33 @@
+<div class="card-whole">
+
+    <div class="card-img">
+        <img src={{proitem.image}} alt="" style="width: 220px; height: 200px; border-radius: 15px 15px 0 0;">
+    </div>
+
+    <div class="card-body">
+        <div class="product-name">
+            <strong>Name: </strong>{{proitem.name}}
+        </div>
+        <div class="product-price">
+            <p><strong>Price:</strong> {{proitem.price|currency:'INR'}}</p>
+        </div>
+        <div class="product-description">
+            <p><strong>Description:</strong> {{proitem.des}}</p>
+        </div>
+    </div>
+
+    <div class="card-btn">
+        <button class="btn btn-primary add-btn" style="margin-left: 15px; margin-right: 20px; margin-bottom: 10px;" (click)="handleaddtocart()"> Add to cart</button>
+        <button class="btn btn-primary" style="margin-bottom: 10px;"> View </button>
+    </div>
+                
+    
+    
+        <!--         
+        <button id='' class="btn btn-primary" (click)="handleaddtocart()"> Add to cart</button>
+        <button id="" class="btn btn-primary"> View </button>
+        -->
+    
+
+</div>
+

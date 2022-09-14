@@ -1,0 +1,102 @@
+.whole{
+    width: 100%;
+    height: 100vh;
+    background-color: #E5E4E2;
+}
+
+.main{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    top: 70px;
+    left: 125px;
+    border: 4px solid black;
+    border-radius: 25px;
+}
+
+.photo{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: #36454F;
+    border-radius: 20px;
+}
+
+.input{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    right: 0;
+}
+
+.name{
+    position: absolute;
+    width: 40%;
+    top: 25px;
+    left: 40px;
+}
+
+.price{
+    position: absolute;
+    width: 40%;
+    top: 25px;
+    right: 40px;
+}
+
+.description{
+    position: absolute;
+    width: 87%;
+    top: 100px;
+    left: 40px;
+}
+
+.category{
+    position: absolute;
+    width: 40%;
+    top: 180px;
+    left: 40px;
+}
+
+.payment{
+    position: absolute;
+    width: 40%;
+    top: 180px;
+    right: 40px;
+}
+
+.image{
+    position: absolute;
+    width: 87%;
+    top: 260px;
+    left: 40px;
+}
+
+.delivery{
+    position: absolute;
+    width: 87%;
+    top: 340px;
+    left: 40px;
+}
+
+button{
+    position: absolute;
+    width: 87%;
+    top: 380px;
+    left: 40px
+}
+
+.display{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    left: 40px;
+    top: 20px;
+    /* background-color: chartreuse; */
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
