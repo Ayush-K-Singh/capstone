@@ -1,0 +1,79 @@
+.whole{
+    position: relative;
+    width: 100%;
+    height: 558px;
+    /* background-color: silver; */
+}
+
+.image{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 25px;
+    left: 75px;
+    /* background-color: bisque; */
+}
+
+.body{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: 25px;
+    right: 75px;
+    /* background-color: green; */
+}
+
+.name{
+    /* position: absolute; */
+    font-size: 50px;
+    font-family: monospace;
+    /* height: 200px; */
+    margin-top: 20px;
+    left: 20px;
+    /* background-color: brown; */
+    line-height: 100%;
+}
+
+.description{
+    /* position: absolute; */
+    font-size: 20px;
+    font-family: monospace;
+    top: 120px;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.category{
+    /* position: absolute; */
+    font-size: 20px;
+    font-family: monospace;
+    top: 150px;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.price{
+    /* position: absolute; */
+    font-size: 20px;
+    font-family: monospace;
+    top: 180px;
+    left: 20px; 
+    margin-top: 10px;
+}
+
+.add-btn{
+    /* position: absolute; */
+    font-size: 20px;
+    font-family: monospace;
+    top: 230px;
+    left: 20px; 
+}
+
+.image-show{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 50px;
+    top: 20px;
+    border: 2px solid grey;
+}

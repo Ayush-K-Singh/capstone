@@ -11,21 +11,20 @@ export class ProductApiService implements InMemoryDbService{
   createDb() {
     return{
       product:[
-        {id:'1',name:'prod1',des:'nice product',qty:2,category:'fashion',price:40    ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'2',name:'prod2',des:'nice product',qty:2,category:'electronics',price:60,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'3',name:'prod3',des:'nice product',qty:2,category:'jewllery',price:80   ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
+        {id:'1',name:'Polo T-Shirt',des:'Drop Shoulder Tshirt for men.',qty:2,category:'fashion',price:200,image:"../../../assets/IMG_20220913_161449.jpg"},
+        {id:'3',name:'Cotton T-shirt',des:'Mens Cotton T-shirt regular fit.',qty:2,category:'fashion',price:250   ,image:"../../../assets/IMG_20220913_161512.jpg"},
+        {id:'4',name:'Round Neck T-shirt',des:'Mens Regular Round Neck T-shirt.',qty:2,category:'fashion',price:999    ,image:"../../../assets/IMG_20220913_161523.jpg"},
+        {id:'5',name:'Half Sleeve T-Shirt',des:'Cotton printed T-shirt.',qty:2,category:'fashion',price:199,image:"../../../assets/IMG_20220913_161542.jpg"},
+        {id:'6',name:'Printed T-shirt',des:'Printed colored T-shirt',qty:2,category:'fashion',price:299   ,image:"../../../assets/IMG_20220913_161554.jpg"},
+        {id:'7',name:'Full sleeve T-Shirt',des:'Full sleeve Gym T-shirt',qty:2,category:'fashion',price:599    ,image:"../../../assets/fashion1.jpg"},
+        {id:'8',name:'Hand Bag',des:'Printed Handbag for Women',qty:2,category:'electronics',price:699,image:"../../../assets/fashion2.jpg"},
+        {id:'1',name:'Gold Necklace',des:'Golden Necklace set for Women.',qty:2,category:'jewllery',price:189000    ,image:"../../../assets/jwellery3.jpg"},
+        {id:'9',name:'Silver Pendent',des:'Silver Pendent for Women.',qty:2,category:'jewllery',price:1399   ,image:"../../../assets/jwellery1.jpg"},
 
-        {id:'4',name:'prod4',des:'nice product',qty:2,category:'fashion',price:65    ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'5',name:'prod5',des:'nice product',qty:2,category:'electronics',price:199,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'6',name:'prod6',des:'nice product',qty:2,category:'jewllery',price:100   ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-
-        {id:'7',name:'prod7',des:'nice product',qty:2,category:'fashion',price:299    ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'8',name:'prod8',des:'nice product',qty:2,category:'electronics',price:99,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'9',name:'prod9',des:'nice product',qty:2,category:'jewllery',price:399   ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-
-        {id:'10',name:'prod10',des:'nice product',qty:2,category:'fashion',price:499    ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'11',name:'prod11',des:'nice product',qty:2,category:'electronics',price:499,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
-        {id:'12',name:'prod12',des:'nice product',qty:2,category:'jewllery',price:199   ,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
+        {id:'10',name:'Gold Necklace',des:'Goldern Necklace set for women.',qty:2,category:'fashion',price:499    ,image:"../../../assets/jwellery2.jpg"},
+        // {id:'11',name:'Peacock Necklace Set',des:'Peacock Necklace set for women',qty:2,category:'electronics',price:499,image:"https://th.bing.com/th/id/OIP.K4VhFvhhDHqA2od_dB3vkgHaJ4?pid=ImgDet&rs=1"},
+        {id:'11',name:'Peacock Necklace Set',des:'Peacock Necklace set for women',qty:2,category:'jewllery',price:499,image:"../../../assets/jwellery4.jpg"},
+        {id:'12',name:'Pearl Necklace',des:'White pearl necklace',qty:2,category:'jewllery',price:199   ,image:"../../../assets/jwellery5.jpg"},
 
       ]
     };

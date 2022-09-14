@@ -116,6 +116,12 @@ onSubmit(){
       // this.Products=data.filter(x=>x.price >= this.from && x.price <= this.to)})  
       console.log(this.Products)
   
+  }else if(this.update=="")
+  {
+    this._service.getProducts().subscribe((data:Product[])=>{
+      this.Products=data.filter(x=>x.price >= this.filtersform.controls['from'].value && x.price <= this.filtersform.controls['to'].value)
+    })
+    
   }
   else
   {

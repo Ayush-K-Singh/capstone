@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from "../../Models/product";
 import { MessService } from '../../service/Product_Add_Messanger/mess.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productitem',
@@ -10,7 +11,7 @@ import { MessService } from '../../service/Product_Add_Messanger/mess.service';
 export class ProductitemComponent implements OnInit {
 padded=false
 wishitems:any[]=[]
-  constructor(private _msgser:MessService) { }
+  constructor(private _msgser:MessService, public router:Router) { }
  @Input() proitem:any=[]
   ngOnInit(): void {
   }
@@ -43,5 +44,9 @@ wishitems:any[]=[]
 handleaddtocart(){
   this._msgser.sendMsg(this.proitem)
   this.padded=!this.padded
+}
+
+viewClicked(){
+  this.router.navigate(['/product-description', this.proitem.id])
 }
 }

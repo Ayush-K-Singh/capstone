@@ -26,7 +26,7 @@ if(del.qty>1)
     this.price = this._msgser.getTotal()
 }
 else{
-    // this.cart.splice(del,1);
+    this.cart.splice(del,1);
     this.price = this._msgser.getTotal()
 }
 }

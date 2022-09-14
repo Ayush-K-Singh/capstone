@@ -36,27 +36,30 @@
 
 .product-name{
     position: absolute;
-    width: 110px;
-    height: 40px;
-    /* background-color: white; */
+    width: 225px;
+    height: 25px;
+    /* background-color: rgb(212, 18, 18); */
     padding-left: 15px;
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 .product-price{
     position: absolute;
-    width: 110px;
-    height: 40px;
-    right: 0;
+    width: 225px;
+    height: 25px;
+    top: 20px;
     padding-top: 10px;
+    padding-left: 15px;
     /* background-color: cornflowerblue; */
+    
 }
 
 .product-description{
     position: absolute;
     width: 220px;
     height: 60px;
-    top: 40px;
+    top: 50px;
     padding-left: 15px;
     /* background-color: yellow; */
 }

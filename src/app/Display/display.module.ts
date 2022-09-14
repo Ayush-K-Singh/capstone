@@ -32,7 +32,7 @@ import { LandingComponent } from '../landing/landing.component';
      HttpClientInMemoryWebApiModule.forRoot(ProductApiService),HttpClientModule,FormsModule,
      NgbModule
   ],
-  exports:[Displaydata,ProductitemComponent],
+  exports:[Displaydata,ProductitemComponent, HeaderComponent],
   providers: [ServiceService,MessService,],
 })
 export class DisplayModule { }

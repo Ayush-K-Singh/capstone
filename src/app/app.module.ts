@@ -58,6 +58,7 @@ import { LoginModule } from './login/login.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './landing/landing.component';
 import { SignupModule } from './signup/signup.module';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
 // import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
@@ -66,6 +67,7 @@ import { SignupModule } from './signup/signup.module';
 @NgModule({
   declarations: [
     AppComponent,
+    ProductDescriptionComponent,
     // LandingComponent
   ],
   imports: [
