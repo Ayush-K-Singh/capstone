@@ -22,7 +22,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { LandingComponent } from '../landing/landing.component';
 
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [Displaydata,ProductitemComponent,HeaderComponent,FooterComponent, LandingComponent],
@@ -30,7 +30,8 @@ import { LandingComponent } from '../landing/landing.component';
     CommonModule,BrowserAnimationsModule,RouterModule,
     MatInputModule,MatButtonModule,MatFormFieldModule,MatSelectModule,ReactiveFormsModule,
      HttpClientInMemoryWebApiModule.forRoot(ProductApiService),HttpClientModule,FormsModule,
-     NgbModule
+     NgbModule,
+     MatSnackBarModule
   ],
   exports:[Displaydata,ProductitemComponent, HeaderComponent],
   providers: [ServiceService,MessService,],

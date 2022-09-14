@@ -26,7 +26,9 @@ export class LoginComponent implements OnInit {
     this.userPasswordInDB = loginForm.value.userPasswordEntered
 
     if((this.userEmailInDB === "user1@gmail.com" && this.userPasswordInDB === "user1") || (this.userEmailInDB === "user2@gmail.com" && this.userPasswordInDB === "user2") || (this.userEmailInDB === "user3@gmail.com" && this.userPasswordInDB === "user3") || (this.userEmailInDB === "user4@gmail.com" && this.userPasswordInDB === "user4")){
-      this.showUser = !this.showUser
+      // this.showUser = !this.showUser
+      this.router.navigate(['/display'])
+
       console.log("User Logged In");
     }else{
       console.log("Wrong Credentials");
@@ -44,5 +46,9 @@ export class LoginComponent implements OnInit {
   signupClicked(){
     this.router.navigate(['/signup'])
   }
+
+  // loginClicked(){
+  //   this.router.navigate(['/display'])
+  // }
 
 }

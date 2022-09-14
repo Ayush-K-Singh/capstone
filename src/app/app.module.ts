@@ -81,7 +81,8 @@ import { ProductDescriptionComponent } from './product-description/product-descr
   HttpClientInMemoryWebApiModule.forRoot(ProductApiService),HttpClientModule,
   LoginModule,
   NgbModule,
-  SignupModule
+  SignupModule,
+  DisplayModule
 
   ],
   providers: [ServiceService,MessService],

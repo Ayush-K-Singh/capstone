@@ -72,6 +72,8 @@
     font-size: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
+    color: white;
+    background-color: #DDDDDD;
 }
 
 .search-btn{
@@ -85,4 +87,5 @@
     font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: #DDDDDD;
 }
