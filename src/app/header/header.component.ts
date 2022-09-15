@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Product } from '../Models/product';
+import { LoginService } from '../service/login.service';
 import { MessService } from '../service/Product_Add_Messanger/mess.service';
 import { ServiceService } from '../service/service.service';
 
@@ -9,12 +10,12 @@ import { ServiceService } from '../service/service.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, DoCheck{
 
   public totalItem : number = 0;
   public searchTerm !: string;
 
-  constructor(private  _msgser : MessService,private _productsService:ServiceService) { }
+  constructor(private  _msgser : MessService,private _productsService:ServiceService, public logincheck:LoginService) { }
 
   product:any=[]
 
@@ -40,5 +41,26 @@ export class HeaderComponent implements OnInit {
     
     }
     this.product.splice(0,this.product.length)
+  }
+
+  user:any = false
+  admin:any = false
+
+  ngDoCheck(): void {
+    // this.user = localStorage.getItem('user')
+    // this.admin = localStorage.getItem('admin')
+    this.user = this.logincheck.userLoggedIn
+    this.admin = this.logincheck.adminLoggedIn
+  }
+  
+
+
+  logoutClicked(){
+    // localStorage.setItem('user','false')
+    // localStorage.setItem('admin','true')
+    this.logincheck.userLoggedIn = false
+    this.logincheck.adminLoggedIn = false
+    console.log(this.user)
+    console.log(this.admin)
   }
 }

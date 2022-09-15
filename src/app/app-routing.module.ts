@@ -16,6 +16,7 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'product-description',component:ProductDescriptionComponent},
   {path:'display', component:Displaydata},
+  {path:'admin', component:AdminComponent},
   {path:'**',component:Displaydata},
   // {path:'',redirectTo:'login',pathMatch:'full'},
  

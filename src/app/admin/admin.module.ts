@@ -10,6 +10,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { MatTableModule } from '@angular/material/table'  
+import { RouterModule } from '@angular/router';
 
 
 
@@ -26,7 +27,8 @@ import { MatTableModule } from '@angular/material/table'
     MatSelectModule,
     MatInputModule,
     MatRadioModule,
-    MatTableModule
+    MatTableModule,
+    RouterModule
   ],
   exports: [
     AdminComponent

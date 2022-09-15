@@ -14,7 +14,7 @@
 .app-name{
     position: absolute;
     top: 10px;
-    left: 40px;
+    left: 60px;
     color: white;
     font-family: monospace;
     font-size: 30px;
@@ -34,7 +34,7 @@
 .login-btn{
     position: absolute;
     top: 5px;
-    right: 180px;
+    right: 220px;
     color: white;
     font-family: monospace;
     font-size: 20px;
@@ -44,21 +44,39 @@
 .signup-btn{
     position: absolute;
     top: 5px;
-    right: 100px;
+    right: 140px;
     color: white;
     font-family: monospace;
     font-size: 20px;
 
 }
 
+.admin-btn{
+    position: absolute;
+    top: 5px;
+    right: 140px;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
 .cart-btn{
     position: absolute;
     top: 5px;
-    right: 40px;
+    right: 80px;
     color: white;
     font-family: monospace;
     font-size: 20px;
 
+}
+
+.logout-btn{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
 }
 
 .search-bar{

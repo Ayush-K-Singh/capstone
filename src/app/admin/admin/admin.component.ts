@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -8,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit(): void {
   }
@@ -29,5 +30,10 @@ export class AdminComponent implements OnInit {
     console.log(this.productForm.value);
   }
 
+  created(){
+    console.log(this.productForm.value);
+    this.router.navigate(['/display'])
+
+  }
 
 }

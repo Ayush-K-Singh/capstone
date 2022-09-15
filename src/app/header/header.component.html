@@ -15,15 +15,30 @@
       <!-- <li class="nav-item">
         <a class="nav-link home-btn" href="#">Home</a>
       </li> -->
-      <li class="nav-item">
-        <a class="nav-link login-btn" routerLink="/login">LogIn</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link signup-btn" routerLink="/signup">SignUp</a>
-      </li>
+      <div *ngIf="!user && !admin">
+        <li class="nav-item">
+          <a class="nav-link login-btn" routerLink="/login">LogIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link signup-btn" routerLink="/signup">SignUp</a>
+        </li>
+      </div>
+
+      <div *ngIf="admin">
+        <li class="nav-item">
+          <a class="nav-link admin-btn" routerLink="/admin">Manage</a>
+        </li>
+      </div>
+      
       <li class="nav-item">
         <a class="nav-link cart-btn" routerLink="/cart">Cart</a>
       </li>
+      <div *ngIf="user || admin">
+        <li class="nav-item">
+          <a class="nav-link logout-btn" (click)="logoutClicked()">Logout</a>
+        </li>
+      </div>
+      
     </ul>
   </div>
 </nav>

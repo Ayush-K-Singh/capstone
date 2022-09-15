@@ -1,8 +1,10 @@
 <div class="whole">
+    <h1 class="text">Create Product</h1>
+
     <div class="main">
         <div class="photo">
             <div class="display">
-                <img [src]="productForm.value.image"  alt="">
+                <img src="{{productForm.value.image}}"  alt="">
             </div>
         </div>
         <div class="input">
@@ -103,7 +105,7 @@
                     </div>
                     
                     <div class="submit">
-                        <button type="submit" class="btn btn-primary">Create Product</button>
+                        <button type="submit" class="btn btn-primary" (click)="created()">Create Product</button>
                     </div>
                 
                 </form>
