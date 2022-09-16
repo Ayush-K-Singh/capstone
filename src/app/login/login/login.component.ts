@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/service/login.service';
@@ -51,6 +51,8 @@ export class LoginComponent implements OnInit {
     }
     
   }
+
+  @ViewChild('loginForm') createUserForm!:NgForm;
 
   signupClicked(){
     this.router.navigate(['/signup'])

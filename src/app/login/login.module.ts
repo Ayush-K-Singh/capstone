@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { DisplayModule } from '../Display/display.module';
+import { CanDeactivateGuard } from '../can-deactivate.guard';
 
 
 
@@ -17,6 +18,7 @@ import { DisplayModule } from '../Display/display.module';
     RouterModule,
     DisplayModule
   ],
+  providers: [CanDeactivateGuard],
   exports:[
     LoginComponent
   ]

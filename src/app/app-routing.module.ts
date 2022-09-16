@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login/login.component';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { SignupComponent } from './signup/signup/signup.component';
+import { CanDeactivateGuard } from './can-deactivate.guard';
 
 const routes: Routes = [
   {path:'landing', component:LandingComponent},
