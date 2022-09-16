@@ -52,6 +52,9 @@ export class LoginComponent implements OnInit {
       this.logInCheck.adminLoggedIn = !this.logInCheck.adminLoggedIn
       this.router.navigate(['/display'])
       console.log("Admin Logged In")
+      this._msgservice.emptycart();
+      localStorage.setItem('logvalue','true')
+
     }else{
       console.log("Wrong Credentials")
     }

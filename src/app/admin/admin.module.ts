@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { MatTableModule } from '@angular/material/table'  
 import { RouterModule } from '@angular/router';
+import { DisplayModule } from '../Display/display.module';
 
 
 
@@ -28,7 +29,8 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatRadioModule,
     MatTableModule,
-    RouterModule
+    RouterModule,
+    DisplayModule
   ],
   exports: [
     AdminComponent

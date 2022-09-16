@@ -29,10 +29,14 @@
           <a class="nav-link admin-btn" routerLink="/admin">Manage</a>
         </li>
       </div>
-      
-      <li class="nav-item">
+      <div *ngIf="user || admin">
+        <li class="nav-item">
+          <a class="nav-link cart-btn" routerLink="/cart">Cart</a>
+        </li>
+      </div>
+      <!-- <li class="nav-item">
         <a class="nav-link cart-btn" routerLink="/cart">Cart</a>
-      </li>
+      </li> -->
       <div *ngIf="user || admin">
         <li class="nav-item">
           <a class="nav-link logout-btn" (click)="logoutClicked()">Logout</a>

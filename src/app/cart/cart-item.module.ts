@@ -4,13 +4,15 @@ import { cartitemcomponent } from './cart-item/cart-item.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { DisplayModule } from '../Display/display.module';
 
 
 
 @NgModule({
   declarations: [cartitemcomponent,],
   imports: [
-    CommonModule,RouterModule
+    CommonModule,RouterModule,
+    DisplayModule
   ],
   exports:[cartitemcomponent]
 })
