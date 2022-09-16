@@ -163,10 +163,12 @@ ngb-carousel .wrapper>img {
     left: 20px;
     width: 150px;
     font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    background-color: #DDDDDD;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* border-radius: 10px; */
+    /* background-color: #DDDDDD; */
+    font-family: monospace;
+    color: black;
 }
 
 .product-box{

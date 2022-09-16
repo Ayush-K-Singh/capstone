@@ -9,7 +9,8 @@
       <li class="nav-item">
         <form #searchform="ngForm" (ngSubmit)="submit(searchform)">
           <input type="text" name='search' class="search-bar"   [(ngModel)]="searchTerm"  placeholder="Search All Products" ngModel>
-          <button type="submit" class="search-btn">Search</button>
+          <!-- <button type="submit" class="search-btn">Search</button> -->
+          <button mat-raised-button type="submit" class="search-btn">Search</button>
         </form>
       </li>
       <!-- <li class="nav-item">
@@ -17,21 +18,28 @@
       </li> -->
       <div *ngIf="!user && !admin">
         <li class="nav-item">
-          <a class="nav-link login-btn" routerLink="/login">LogIn</a>
+          <!-- <a class="nav-link login-btn" routerLink="/login">LogIn</a> -->
+          <button mat-raised-button class="nav-link login-btn" routerLink="/login">LogIn</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link signup-btn" routerLink="/signup">SignUp</a>
+          <!-- <a class="nav-link signup-btn" routerLink="/signup">SignUp</a> -->
+          <button mat-raised-button class="nav-link signup-btn" routerLink="/signup">SignUp</button>
+
         </li>
       </div>
 
       <div *ngIf="admin">
         <li class="nav-item">
-          <a class="nav-link admin-btn" routerLink="/admin">Manage</a>
+          <!-- <a class="nav-link admin-btn" routerLink="/admin">Manage</a> -->
+          <button mat-raised-button class="nav-link admin-btn" routerLink="/Admin">Manage</button>
+
         </li>
       </div>
       <div *ngIf="user || admin">
         <li class="nav-item">
-          <a class="nav-link cart-btn" routerLink="/cart">Cart</a>
+          <!-- <a class="nav-link cart-btn" routerLink="/cart">Cart</a> -->
+          <button mat-raised-button class="nav-link cart-btn" routerLink="/cart">Cart</button>
+
         </li>
       </div>
       <!-- <li class="nav-item">
@@ -39,7 +47,9 @@
       </li> -->
       <div *ngIf="user || admin">
         <li class="nav-item">
-          <a class="nav-link logout-btn" (click)="logoutClicked()">Logout</a>
+          <!-- <a class="nav-link logout-btn" (click)="logoutClicked()">Logout</a> -->
+          <button mat-raised-button class="nav-link logout-btn" (click)="logoutClicked()">Logout</button>
+
         </li>
       </div>
       
