@@ -24,6 +24,7 @@ export class HeaderComponent implements OnInit, DoCheck{
       this.totalItem +=item.qty
       console.log(this._msgser.cartitems.length)
    });
+   
   }
 
   submit(searchform:NgForm){
@@ -60,7 +61,10 @@ export class HeaderComponent implements OnInit, DoCheck{
     // localStorage.setItem('admin','true')
     this.logincheck.userLoggedIn = false
     this.logincheck.adminLoggedIn = false
+    localStorage.setItem('logoutvalue','true')
+    this._msgser.cartitems.splice(0,this._msgser.cartitems.length)
     console.log(this.user)
     console.log(this.admin)
   }
+  
 }

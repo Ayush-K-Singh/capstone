@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/service/login.service';
+import { MessService } from 'src/app/service/Product_Add_Messanger/mess.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,9 @@ import { LoginService } from 'src/app/service/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public router:Router, public logInCheck:LoginService) { }
+  constructor(public router:Router,
+    private _msgservice:MessService,
+    public logInCheck:LoginService) { }
 
   ngOnInit(): void {
     // localStorage.setItem('user', 'false')
@@ -35,6 +38,9 @@ export class LoginComponent implements OnInit {
       this.logInCheck.userLoggedIn = !this.logInCheck.userLoggedIn
       this.router.navigate(['/display'])
       console.log("User Logged In");
+      this._msgservice.emptycart();
+  
+      localStorage.setItem('logvalue','true')
     }else{
       console.log("Wrong Credentials");
     }

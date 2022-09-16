@@ -37,6 +37,9 @@ add(product:Product){
       this.getTotal();
 
 }
+emptycart(){
+  this.cartitems.splice(0,this.cartitems.length);
+}
   sendMsg(product:Product){
    
     let productExists = false;
@@ -83,5 +86,28 @@ add(product:Product){
     this.subject$.next(data);
 
    }
+  //total items in cart
+  gettotalitems():number
+{
+  let final:number=0
   
+  this.cartitems.forEach((e:any)=>{
+    if(e.qty>= 1)
+{
+  // console.log(this.counter)
+  // console.log(e)
+  this.counter=e.qty
+
+}
+else{
+  this.cartitems.forEach((data:any)=>{
+    if(data.qty=0)
+    this.counter++
+  })
+ }
+ final=final+this.counter
+  })
+  // console.log(final)
+  return final ;
+}
   }
