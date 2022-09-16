@@ -80,13 +80,13 @@
 .signup{
     position: absolute;
     top: 375px;
-    left: 30px;
-    width: 80%;
-    height: 40px;
-    font-size: 25px;
+    left: 110px;
+    /* width: 80%; */
+    /* height: 40px; */
+    /* font-size: 25px; */
     font-family: monospace;
-    border-radius: 10px;
-    border: 2px solid black; 
+    /* border-radius: 10px; */
+    /* border: 2px solid black;  */
 }
 
 .hr{
