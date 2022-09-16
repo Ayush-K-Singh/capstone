@@ -1,5 +1,5 @@
 <ng-container *ngIf="cart.length !=0">
-    <div class="container">
+    <div class="cart-full">
         <div class="card-table">
             <div class="cart-product">
                 <table class="table table-responsive">
@@ -32,8 +32,10 @@
                             <td colspan="4"></td>
                             <td><button (click)="emptycart()" class="btn btn-danger">Empty Cart</button></td>
                             <td><button routerLink="**" class="btn btn-primary">Shop More</button></td>
-                            <td><button class="btn btn-success">Checkout</button></td>
-                            <td><strong>Grand Total : {{price}}</strong></td>
+                            <!-- <td><button class="btn btn-success">Checkout</button></td> -->
+                            <div class="total">
+                                <td>Grand Total: {{price}}</td>
+                            </div>
                         </tr>
                     </tbody>
                 </table>
@@ -45,12 +47,12 @@
 
 <ng-container *ngIf="cart.length ==0">
     
-    <div class="card container">
+    <div class="cart-empty">
         <div >
             <h1 class="text-center">My Cart</h1>
         </div>
         <div class="text-center">
-            <img width="40%"src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+            <img width="40%" src="../../../assets/undraw_empty_cart_co35 (1).png" alt="">
             
             <h2>Your cart is empty!</h2>
             <h2>Add item to it now</h2>
@@ -67,7 +69,7 @@
 
 
 <!---footer--->
-<head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"></head>
+<!-- <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"></head>
 <div class="row1 footer btn btn-primary ">
     <div >
         <div class="row">
@@ -102,4 +104,4 @@
         <hr>
         <p>@Copyright 2022</p>
     </div>
-</div>
+</div> -->

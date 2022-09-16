@@ -27,7 +27,7 @@
 .email{
     position: absolute;
     left: 30px;
-    top: 175px;
+    top: 170px;
     width: 80%;
     height: 40px;
     border-radius: 10px;
@@ -37,9 +37,16 @@
     border: 2px solid black;
 }
 
+.email-error{
+    position: absolute;
+    left: 30px;
+    top: 210px;
+    color: red;
+}
+
 .password{
     position: absolute;
-    top: 225px;
+    top: 230px;
     left: 30px;
     width: 80%;
     height: 40px;
@@ -48,6 +55,13 @@
     font-size: 25px;
     font-family: monospace;
     border: 2px solid black;
+}
+
+.password-error{
+    position: absolute;
+    left: 30px;
+    top: 270px;
+    color: red;
 }
 
 .login{

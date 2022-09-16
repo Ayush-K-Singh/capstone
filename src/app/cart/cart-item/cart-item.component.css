@@ -29,3 +29,18 @@ sidebar__hr {
 .col-4{
     margin-top: 40px;
 }
+
+.cart-empty{
+  width: 100%;
+}
+
+.cart-full{
+  width: 100%;
+}
+
+.total{
+  /* background-color: blueviolet; */
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+}

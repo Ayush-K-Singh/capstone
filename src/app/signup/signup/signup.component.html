@@ -4,14 +4,23 @@
       <h2 class="text">SignUp</h2>
       <p class="para-text">Create New Account</p>
       <form #loginForm = "ngForm" (ngSubmit)="onSubmit(loginForm)">
-        <input class="name" type="text" name="userNameEntered" ngModel id="" placeholder="Enter Name">
+        <input class="name" type="text" name="userNameEntered" #name = "ngModel" ngModel id="" placeholder="Enter Name" required>
+        <div class="name-error" *ngIf="name.invalid && name.touched">
+          Name is Required.
+        </div>
 
-        <input class="email" type="email" name="userEmailEntered" ngModel id="" placeholder="Enter Email">
+        <input class="email" type="email" name="userEmailEntered" #email = "ngModel" ngModel id="" placeholder="Enter Email" required>
         <!-- <br> -->
-        <input class="password" type="text" name="userPasswordEntered" ngModel id="" placeholder="Enter Password">
+        <div class="email-error" *ngIf="email.invalid && email.touched">
+          Email is Required.
+        </div>
+        <input class="password" type="text" name="userPasswordEntered" #password = "ngModel" ngModel id="" placeholder="Enter Password" required>
         <!-- <br> -->
+        <div class="password-error" *ngIf="password.invalid && password.touched">
+          Password is Required.
+        </div>
         <div class="hr"></div>
-        <button class="signup" type="submit">SignUp</button>
+        <button class="signup" type="submit" [disabled]="loginForm.invalid">SignUp</button>
       </form>
       <!-- <button class="signup">New User : SignUp</button> -->
     </div>
